@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Dungeon</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main class="game-shell" aria-label="Python Dungeon">
+        <section class="hud" aria-label="Status do jogo">
+            <div class="hud__block">
+                <span class="label">Nivel</span>
+                <strong><span id="level-text">1</span><span id="level-max">/5</span></strong>
+            </div>
+
+            <div class="hud__block">
+                <span class="label">Vidas</span>
+                <strong id="lives-text" class="lives" aria-label="3 de 3 vidas">
+                    <span class="heart heart--full" aria-hidden="true">♥</span>
+                    <span class="heart heart--full" aria-hidden="true">♥</span>
+                    <span class="heart heart--full" aria-hidden="true">♥</span>
+                </strong>
+            </div>
+
+            <div class="hud__block hud__timer">
+                <span class="label">Tempo</span>
+                <div class="timer-track" aria-hidden="true">
+                    <div id="timer-fill" class="timer-fill"></div>
+                </div>
+                <strong id="timer-text">10s</strong>
+            </div>
+
+            <div class="hud__block hud__block--right">
+                <span class="label">XP</span>
+                <strong id="score-text">0</strong>
+            </div>
+        </section>
+
+        <section class="stage" aria-label="Labirinto">
+            <div id="maze" class="maze"></div>
+
+            <dialog id="quiz-dialog" class="modal">
+                <div class="modal__header">
+                    <span id="question-topic" class="tag">Python</span>
+                    <span id="question-difficulty" class="tag tag--muted">Facil</span>
+                </div>
+                <p id="question-text" class="question-text"></p>
+                <div id="options" class="options"></div>
+                <p id="feedback-text" class="feedback" aria-live="polite"></p>
+            </dialog>
+
+            <dialog id="message-dialog" class="modal modal--message">
+                <h1 id="message-title"></h1>
+                <p id="message-text"></p>
+                <button id="message-action" class="button">Continuar</button>
+            </dialog>
+        </section>
+
+        <footer class="legend" aria-label="Legenda">
+            <span><kbd>Setas</kbd> mover</span>
+            <span><span class="legend-tile legend-tile--gate"></span> questao</span>
+            <span><span class="legend-tile legend-tile--time"></span> tempo extra</span>
+            <span><span class="legend-tile legend-tile--secret"></span> segredo</span>
+            <span><span class="legend-tile legend-tile--finish"></span> saida</span>
+        </footer>
+    </main>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>

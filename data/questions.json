@@ -1,0 +1,1877 @@
+[
+  {
+    "id": 1,
+    "level": 1,
+    "topic": "Saída",
+    "difficulty": "Fácil",
+    "prompt": "Qual é a saída de print(2 + 3)?",
+    "explanation": "O operador + soma dois números inteiros.",
+    "options": [
+      {
+        "id": 1,
+        "text": "5",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "text": "23",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "text": "Error",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "level": 1,
+    "topic": "Comentários",
+    "difficulty": "Fácil",
+    "prompt": "Qual símbolo inicia um comentário de uma linha em Python?",
+    "explanation": "Em Python, comentários de uma linha começam com #.",
+    "options": [
+      {
+        "id": 4,
+        "text": "//",
+        "isCorrect": false
+      },
+      {
+        "id": 5,
+        "text": "#",
+        "isCorrect": true
+      },
+      {
+        "id": 6,
+        "text": "/*",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "level": 1,
+    "topic": "Tipos",
+    "difficulty": "Fácil",
+    "prompt": "Qual é o tipo do valor '10'?",
+    "explanation": "Valores entre aspas são strings.",
+    "options": [
+      {
+        "id": 7,
+        "text": "int",
+        "isCorrect": false
+      },
+      {
+        "id": 8,
+        "text": "str",
+        "isCorrect": true
+      },
+      {
+        "id": 9,
+        "text": "float",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "level": 1,
+    "topic": "Variáveis",
+    "difficulty": "Fácil",
+    "prompt": "Qual operador é usado para atribuir valor a uma variável?",
+    "explanation": "O operador = atribui um valor; == compara valores.",
+    "options": [
+      {
+        "id": 10,
+        "text": "==",
+        "isCorrect": false
+      },
+      {
+        "id": 11,
+        "text": "=",
+        "isCorrect": true
+      },
+      {
+        "id": 12,
+        "text": "=>",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "level": 1,
+    "topic": "Booleanos",
+    "difficulty": "Fácil",
+    "prompt": "Qual é o booleano verdadeiro em Python?",
+    "explanation": "Python diferencia maiúsculas e minúsculas: True é o valor correto.",
+    "options": [
+      {
+        "id": 13,
+        "text": "true",
+        "isCorrect": false
+      },
+      {
+        "id": 14,
+        "text": "True",
+        "isCorrect": true
+      },
+      {
+        "id": 15,
+        "text": "VERDADEIRO",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "level": 1,
+    "topic": "Operadores",
+    "difficulty": "Fácil",
+    "prompt": "Qual operador faz soma?",
+    "explanation": "O sinal + soma números e também concatena strings.",
+    "options": [
+      {
+        "id": 16,
+        "text": "+",
+        "isCorrect": true
+      },
+      {
+        "id": 17,
+        "text": "&",
+        "isCorrect": false
+      },
+      {
+        "id": 18,
+        "text": "add",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "level": 1,
+    "topic": "Tipos",
+    "difficulty": "Fácil",
+    "prompt": "Qual é o resultado de type(1).__name__?",
+    "explanation": "O número 1 sem casas decimais é um inteiro.",
+    "options": [
+      {
+        "id": 19,
+        "text": "int",
+        "isCorrect": true
+      },
+      {
+        "id": 20,
+        "text": "float",
+        "isCorrect": false
+      },
+      {
+        "id": 21,
+        "text": "str",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "level": 1,
+    "topic": "Strings",
+    "difficulty": "Fácil",
+    "prompt": "Qual opção representa uma string vazia?",
+    "explanation": "Duas aspas sem conteúdo formam uma string vazia.",
+    "options": [
+      {
+        "id": 22,
+        "text": "''",
+        "isCorrect": true
+      },
+      {
+        "id": 23,
+        "text": "None",
+        "isCorrect": false
+      },
+      {
+        "id": 24,
+        "text": "null",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "level": 1,
+    "topic": "Entrada",
+    "difficulty": "Fácil",
+    "prompt": "A função input() sempre retorna qual tipo?",
+    "explanation": "input() retorna texto. Converta com int(), float() etc. quando precisar.",
+    "options": [
+      {
+        "id": 25,
+        "text": "str",
+        "isCorrect": true
+      },
+      {
+        "id": 26,
+        "text": "int",
+        "isCorrect": false
+      },
+      {
+        "id": 27,
+        "text": "bool",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "level": 1,
+    "topic": "Nomes",
+    "difficulty": "Fácil",
+    "prompt": "Qual nome de variável é válido em Python?",
+    "explanation": "Nomes podem ter letras, números e _, mas não podem começar com número.",
+    "options": [
+      {
+        "id": 28,
+        "text": "idade_aluno",
+        "isCorrect": true
+      },
+      {
+        "id": 29,
+        "text": "2idade",
+        "isCorrect": false
+      },
+      {
+        "id": 30,
+        "text": "minha-idade",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "level": 1,
+    "topic": "Conversão",
+    "difficulty": "Fácil",
+    "prompt": "Como converter a string '7' para inteiro?",
+    "explanation": "int() converte valores compatíveis para inteiro.",
+    "options": [
+      {
+        "id": 31,
+        "text": "int('7')",
+        "isCorrect": true
+      },
+      {
+        "id": 32,
+        "text": "str('7')",
+        "isCorrect": false
+      },
+      {
+        "id": 33,
+        "text": "number('7')",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "level": 1,
+    "topic": "Saída",
+    "difficulty": "Fácil",
+    "prompt": "Qual função exibe texto no terminal?",
+    "explanation": "print() é a função básica para exibir valores.",
+    "options": [
+      {
+        "id": 34,
+        "text": "print()",
+        "isCorrect": true
+      },
+      {
+        "id": 35,
+        "text": "show()",
+        "isCorrect": false
+      },
+      {
+        "id": 36,
+        "text": "echo()",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "level": 1,
+    "topic": "Strings",
+    "difficulty": "Fácil",
+    "prompt": "Qual é a saída de print('Py' + 'thon')?",
+    "explanation": "O operador + concatena strings.",
+    "options": [
+      {
+        "id": 37,
+        "text": "Python",
+        "isCorrect": true
+      },
+      {
+        "id": 38,
+        "text": "Py thon",
+        "isCorrect": false
+      },
+      {
+        "id": 39,
+        "text": "Error",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "level": 1,
+    "topic": "Números",
+    "difficulty": "Fácil",
+    "prompt": "Qual tipo representa 3.14?",
+    "explanation": "Números com ponto decimal são float.",
+    "options": [
+      {
+        "id": 40,
+        "text": "float",
+        "isCorrect": true
+      },
+      {
+        "id": 41,
+        "text": "int",
+        "isCorrect": false
+      },
+      {
+        "id": 42,
+        "text": "str",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "level": 1,
+    "topic": "Booleanos",
+    "difficulty": "Fácil",
+    "prompt": "Qual é a saída de print(bool('abc'))?",
+    "explanation": "Strings não vazias são consideradas verdadeiras.",
+    "options": [
+      {
+        "id": 43,
+        "text": "True",
+        "isCorrect": true
+      },
+      {
+        "id": 44,
+        "text": "False",
+        "isCorrect": false
+      },
+      {
+        "id": 45,
+        "text": "Error",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "level": 2,
+    "topic": "Listas",
+    "difficulty": "Fácil",
+    "prompt": "Como criar uma lista com os valores 1 e 2?",
+    "explanation": "Listas usam colchetes.",
+    "options": [
+      {
+        "id": 46,
+        "text": "(1, 2)",
+        "isCorrect": false
+      },
+      {
+        "id": 47,
+        "text": "[1, 2]",
+        "isCorrect": true
+      },
+      {
+        "id": 48,
+        "text": "{1, 2}",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "level": 2,
+    "topic": "Operadores",
+    "difficulty": "Fácil",
+    "prompt": "Qual é o resultado de 10 % 3?",
+    "explanation": "% retorna o resto da divisão.",
+    "options": [
+      {
+        "id": 49,
+        "text": "1",
+        "isCorrect": true
+      },
+      {
+        "id": 50,
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "id": 51,
+        "text": "0",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "level": 2,
+    "topic": "Entrada",
+    "difficulty": "Fácil",
+    "prompt": "Qual função lê dados digitados pelo usuário?",
+    "explanation": "input() lê texto digitado pelo usuário.",
+    "options": [
+      {
+        "id": 52,
+        "text": "get()",
+        "isCorrect": false
+      },
+      {
+        "id": 53,
+        "text": "input()",
+        "isCorrect": true
+      },
+      {
+        "id": 54,
+        "text": "scan()",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "level": 2,
+    "topic": "Coleções",
+    "difficulty": "Fácil",
+    "prompt": "Qual função retorna a quantidade de itens de uma lista?",
+    "explanation": "len(lista) retorna o tamanho da coleção.",
+    "options": [
+      {
+        "id": 55,
+        "text": "count()",
+        "isCorrect": false
+      },
+      {
+        "id": 56,
+        "text": "len()",
+        "isCorrect": true
+      },
+      {
+        "id": 57,
+        "text": "size()",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "level": 2,
+    "topic": "Strings",
+    "difficulty": "Fácil",
+    "prompt": "Qual é a saída de print(3 * 'A')?",
+    "explanation": "Multiplicar string por inteiro repete a string.",
+    "options": [
+      {
+        "id": 58,
+        "text": "AAA",
+        "isCorrect": true
+      },
+      {
+        "id": 59,
+        "text": "A3",
+        "isCorrect": false
+      },
+      {
+        "id": 60,
+        "text": "Error",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "level": 2,
+    "topic": "Listas",
+    "difficulty": "Fácil",
+    "prompt": "Qual é o índice do primeiro item de uma lista?",
+    "explanation": "Listas em Python começam no índice 0.",
+    "options": [
+      {
+        "id": 61,
+        "text": "1",
+        "isCorrect": false
+      },
+      {
+        "id": 62,
+        "text": "0",
+        "isCorrect": true
+      },
+      {
+        "id": 63,
+        "text": "-1",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "level": 2,
+    "topic": "Conversão",
+    "difficulty": "Fácil",
+    "prompt": "Qual é o resultado de float('5')?",
+    "explanation": "float() converte para número decimal.",
+    "options": [
+      {
+        "id": 64,
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "id": 65,
+        "text": "5.0",
+        "isCorrect": true
+      },
+      {
+        "id": 66,
+        "text": "'5'",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "level": 2,
+    "topic": "Condições",
+    "difficulty": "Fácil",
+    "prompt": "Qual palavra inicia uma condição?",
+    "explanation": "if inicia um bloco condicional em Python.",
+    "options": [
+      {
+        "id": 67,
+        "text": "if",
+        "isCorrect": true
+      },
+      {
+        "id": 68,
+        "text": "when",
+        "isCorrect": false
+      },
+      {
+        "id": 69,
+        "text": "case",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "level": 2,
+    "topic": "Comparação",
+    "difficulty": "Fácil",
+    "prompt": "Qual operador testa igualdade?",
+    "explanation": "== compara se dois valores são iguais.",
+    "options": [
+      {
+        "id": 70,
+        "text": "=",
+        "isCorrect": false
+      },
+      {
+        "id": 71,
+        "text": "==",
+        "isCorrect": true
+      },
+      {
+        "id": 72,
+        "text": "===",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "level": 2,
+    "topic": "Strings",
+    "difficulty": "Fácil",
+    "prompt": "Qual método deixa uma string em maiúsculas?",
+    "explanation": "upper() retorna uma versão em maiúsculas.",
+    "options": [
+      {
+        "id": 73,
+        "text": ".upper()",
+        "isCorrect": true
+      },
+      {
+        "id": 74,
+        "text": ".big()",
+        "isCorrect": false
+      },
+      {
+        "id": 75,
+        "text": ".caps()",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "level": 2,
+    "topic": "Listas",
+    "difficulty": "Fácil",
+    "prompt": "Como acessar o segundo item de L?",
+    "explanation": "Como o primeiro índice é 0, o segundo item está em L[1].",
+    "options": [
+      {
+        "id": 76,
+        "text": "L[1]",
+        "isCorrect": true
+      },
+      {
+        "id": 77,
+        "text": "L[2]",
+        "isCorrect": false
+      },
+      {
+        "id": 78,
+        "text": "L.second()",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "level": 2,
+    "topic": "Condições",
+    "difficulty": "Fácil",
+    "prompt": "Qual palavra é usada para o caso contrário em um if?",
+    "explanation": "else executa quando a condição anterior é falsa.",
+    "options": [
+      {
+        "id": 79,
+        "text": "else",
+        "isCorrect": true
+      },
+      {
+        "id": 80,
+        "text": "otherwise",
+        "isCorrect": false
+      },
+      {
+        "id": 81,
+        "text": "default",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "level": 2,
+    "topic": "Operadores",
+    "difficulty": "Fácil",
+    "prompt": "Qual é o resultado de 2 ** 3?",
+    "explanation": "** calcula potência.",
+    "options": [
+      {
+        "id": 82,
+        "text": "6",
+        "isCorrect": false
+      },
+      {
+        "id": 83,
+        "text": "8",
+        "isCorrect": true
+      },
+      {
+        "id": 84,
+        "text": "9",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "level": 2,
+    "topic": "Strings",
+    "difficulty": "Fácil",
+    "prompt": "Qual método remove espaços no começo e no fim de uma string?",
+    "explanation": "strip() remove espaços e quebras nas pontas.",
+    "options": [
+      {
+        "id": 85,
+        "text": ".strip()",
+        "isCorrect": true
+      },
+      {
+        "id": 86,
+        "text": ".trim()",
+        "isCorrect": false
+      },
+      {
+        "id": 87,
+        "text": ".clean()",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "level": 2,
+    "topic": "Listas",
+    "difficulty": "Fácil",
+    "prompt": "Qual método adiciona item ao final de uma lista?",
+    "explanation": "append() adiciona um item no fim da lista.",
+    "options": [
+      {
+        "id": 88,
+        "text": ".append()",
+        "isCorrect": true
+      },
+      {
+        "id": 89,
+        "text": ".push()",
+        "isCorrect": false
+      },
+      {
+        "id": 90,
+        "text": ".addEnd()",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "level": 3,
+    "topic": "Comparação",
+    "difficulty": "Médio",
+    "prompt": "Qual operador significa diferente de?",
+    "explanation": "!= testa se dois valores são diferentes.",
+    "options": [
+      {
+        "id": 91,
+        "text": "!=",
+        "isCorrect": true
+      },
+      {
+        "id": 92,
+        "text": "<>",
+        "isCorrect": false
+      },
+      {
+        "id": 93,
+        "text": "not=",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "level": 3,
+    "topic": "Loops",
+    "difficulty": "Médio",
+    "prompt": "O que range(3) gera em um for?",
+    "explanation": "range(3) começa em 0 e para antes do 3.",
+    "options": [
+      {
+        "id": 94,
+        "text": "1, 2, 3",
+        "isCorrect": false
+      },
+      {
+        "id": 95,
+        "text": "0, 1, 2",
+        "isCorrect": true
+      },
+      {
+        "id": 96,
+        "text": "0, 1, 2, 3",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "level": 3,
+    "topic": "Lógica",
+    "difficulty": "Médio",
+    "prompt": "Qual operador representa E lógico?",
+    "explanation": "and combina duas condições booleanas.",
+    "options": [
+      {
+        "id": 97,
+        "text": "&&",
+        "isCorrect": false
+      },
+      {
+        "id": 98,
+        "text": "and",
+        "isCorrect": true
+      },
+      {
+        "id": 99,
+        "text": "&",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "level": 3,
+    "topic": "Funções",
+    "difficulty": "Médio",
+    "prompt": "Como definir uma função chamada soma?",
+    "explanation": "Funções em Python são definidas com def.",
+    "options": [
+      {
+        "id": 100,
+        "text": "def soma():",
+        "isCorrect": true
+      },
+      {
+        "id": 101,
+        "text": "function soma():",
+        "isCorrect": false
+      },
+      {
+        "id": 102,
+        "text": "void soma():",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "level": 3,
+    "topic": "Loops",
+    "difficulty": "Médio",
+    "prompt": "Qual palavra interrompe um loop?",
+    "explanation": "break encerra o loop atual.",
+    "options": [
+      {
+        "id": 103,
+        "text": "exit",
+        "isCorrect": false
+      },
+      {
+        "id": 104,
+        "text": "stop",
+        "isCorrect": false
+      },
+      {
+        "id": 105,
+        "text": "break",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "level": 3,
+    "topic": "Booleanos",
+    "difficulty": "Médio",
+    "prompt": "Qual é o resultado de bool(0)?",
+    "explanation": "O número zero é considerado falso.",
+    "options": [
+      {
+        "id": 106,
+        "text": "True",
+        "isCorrect": false
+      },
+      {
+        "id": 107,
+        "text": "False",
+        "isCorrect": true
+      },
+      {
+        "id": 108,
+        "text": "None",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "level": 3,
+    "topic": "Listas",
+    "difficulty": "Médio",
+    "prompt": "Como testar se 5 está na lista L?",
+    "explanation": "O operador in testa pertencimento.",
+    "options": [
+      {
+        "id": 109,
+        "text": "5 in L",
+        "isCorrect": true
+      },
+      {
+        "id": 110,
+        "text": "L.has(5)",
+        "isCorrect": false
+      },
+      {
+        "id": 111,
+        "text": "L.exists(5)",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "level": 3,
+    "topic": "Loops",
+    "difficulty": "Médio",
+    "prompt": "Qual palavra pula para a próxima repetição do loop?",
+    "explanation": "continue pula o restante da iteração atual.",
+    "options": [
+      {
+        "id": 112,
+        "text": "continue",
+        "isCorrect": true
+      },
+      {
+        "id": 113,
+        "text": "skip",
+        "isCorrect": false
+      },
+      {
+        "id": 114,
+        "text": "next",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "level": 3,
+    "topic": "Funções",
+    "difficulty": "Médio",
+    "prompt": "Qual palavra devolve um valor de uma função?",
+    "explanation": "return encerra a função e devolve um valor.",
+    "options": [
+      {
+        "id": 115,
+        "text": "return",
+        "isCorrect": true
+      },
+      {
+        "id": 116,
+        "text": "send",
+        "isCorrect": false
+      },
+      {
+        "id": 117,
+        "text": "yieldall",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "level": 3,
+    "topic": "Escopo",
+    "difficulty": "Médio",
+    "prompt": "Uma variável criada dentro de uma função normalmente tem qual escopo?",
+    "explanation": "Variáveis criadas dentro da função são locais por padrão.",
+    "options": [
+      {
+        "id": 118,
+        "text": "local",
+        "isCorrect": true
+      },
+      {
+        "id": 119,
+        "text": "global",
+        "isCorrect": false
+      },
+      {
+        "id": 120,
+        "text": "público",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "level": 3,
+    "topic": "Listas",
+    "difficulty": "Médio",
+    "prompt": "Qual expressão copia todos os itens de L em uma nova lista?",
+    "explanation": "O fatiamento L[:] cria uma cópia rasa da lista.",
+    "options": [
+      {
+        "id": 121,
+        "text": "L[:]",
+        "isCorrect": true
+      },
+      {
+        "id": 122,
+        "text": "L[]",
+        "isCorrect": false
+      },
+      {
+        "id": 123,
+        "text": "copy L",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "level": 3,
+    "topic": "Strings",
+    "difficulty": "Médio",
+    "prompt": "Qual é o resultado de 'python'.capitalize()?",
+    "explanation": "capitalize() coloca a primeira letra em maiúscula.",
+    "options": [
+      {
+        "id": 124,
+        "text": "Python",
+        "isCorrect": true
+      },
+      {
+        "id": 125,
+        "text": "PYTHON",
+        "isCorrect": false
+      },
+      {
+        "id": 126,
+        "text": "python",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "level": 3,
+    "topic": "Erros",
+    "difficulty": "Médio",
+    "prompt": "Qual bloco captura exceções?",
+    "explanation": "try/except é usado para tratar exceções em Python.",
+    "options": [
+      {
+        "id": 127,
+        "text": "try/except",
+        "isCorrect": true
+      },
+      {
+        "id": 128,
+        "text": "if/error",
+        "isCorrect": false
+      },
+      {
+        "id": 129,
+        "text": "catch/error",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "level": 3,
+    "topic": "Dicionários",
+    "difficulty": "Médio",
+    "prompt": "Como acessar o valor da chave 'nome' em d?",
+    "explanation": "Dicionários acessam chaves com colchetes.",
+    "options": [
+      {
+        "id": 130,
+        "text": "d['nome']",
+        "isCorrect": true
+      },
+      {
+        "id": 131,
+        "text": "d.nome",
+        "isCorrect": false
+      },
+      {
+        "id": 132,
+        "text": "d->nome",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "level": 3,
+    "topic": "Funções",
+    "difficulty": "Médio",
+    "prompt": "O que significa um parâmetro com valor padrão?",
+    "explanation": "Parâmetros com valor padrão são usados quando a chamada não informa um valor.",
+    "options": [
+      {
+        "id": 133,
+        "text": "Pode ser omitido na chamada",
+        "isCorrect": true
+      },
+      {
+        "id": 134,
+        "text": "É obrigatório",
+        "isCorrect": false
+      },
+      {
+        "id": 135,
+        "text": "Nunca muda",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "level": 4,
+    "topic": "Strings",
+    "difficulty": "Médio",
+    "prompt": "Qual é o resultado de 'Python'[0]?",
+    "explanation": "O índice 0 acessa o primeiro caractere.",
+    "options": [
+      {
+        "id": 136,
+        "text": "P",
+        "isCorrect": true
+      },
+      {
+        "id": 137,
+        "text": "y",
+        "isCorrect": false
+      },
+      {
+        "id": 138,
+        "text": "n",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "level": 4,
+    "topic": "Listas",
+    "difficulty": "Médio",
+    "prompt": "Como acessar o último item de L?",
+    "explanation": "Índices negativos contam do final da lista.",
+    "options": [
+      {
+        "id": 139,
+        "text": "L[last]",
+        "isCorrect": false
+      },
+      {
+        "id": 140,
+        "text": "L[-1]",
+        "isCorrect": true
+      },
+      {
+        "id": 141,
+        "text": "L[0]",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "level": 4,
+    "topic": "Listas",
+    "difficulty": "Médio",
+    "prompt": "Como remover e retornar o item no índice i?",
+    "explanation": "pop(i) remove e retorna o item daquele índice.",
+    "options": [
+      {
+        "id": 142,
+        "text": "L.pop(i)",
+        "isCorrect": true
+      },
+      {
+        "id": 143,
+        "text": "L.remove(i)",
+        "isCorrect": false
+      },
+      {
+        "id": 144,
+        "text": "del(L)",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "level": 4,
+    "topic": "Operadores",
+    "difficulty": "Médio",
+    "prompt": "Qual é o valor de 10 // 3?",
+    "explanation": "// faz divisão inteira.",
+    "options": [
+      {
+        "id": 145,
+        "text": "3.33",
+        "isCorrect": false
+      },
+      {
+        "id": 146,
+        "text": "3",
+        "isCorrect": true
+      },
+      {
+        "id": 147,
+        "text": "1",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "level": 4,
+    "topic": "Dicionários",
+    "difficulty": "Médio",
+    "prompt": "Qual literal cria um dicionário vazio?",
+    "explanation": "{} cria um dicionário vazio.",
+    "options": [
+      {
+        "id": 148,
+        "text": "{}",
+        "isCorrect": true
+      },
+      {
+        "id": 149,
+        "text": "[]",
+        "isCorrect": false
+      },
+      {
+        "id": 150,
+        "text": "()",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "level": 4,
+    "topic": "Tuplas",
+    "difficulty": "Médio",
+    "prompt": "Qual é o tipo de (1, 2)?",
+    "explanation": "Parênteses com valores separados por vírgula formam tupla.",
+    "options": [
+      {
+        "id": 151,
+        "text": "list",
+        "isCorrect": false
+      },
+      {
+        "id": 152,
+        "text": "tuple",
+        "isCorrect": true
+      },
+      {
+        "id": 153,
+        "text": "dict",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "level": 4,
+    "topic": "Strings",
+    "difficulty": "Médio",
+    "prompt": "Qual opção é uma f-string válida?",
+    "explanation": "f-strings começam com f antes das aspas.",
+    "options": [
+      {
+        "id": 154,
+        "text": "f'Oi {nome}'",
+        "isCorrect": true
+      },
+      {
+        "id": 155,
+        "text": "'Oi %nome'",
+        "isCorrect": false
+      },
+      {
+        "id": 156,
+        "text": "format'Oi {nome}'",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "level": 4,
+    "topic": "Dicionários",
+    "difficulty": "Médio",
+    "prompt": "Qual método retorna pares chave/valor de um dicionário?",
+    "explanation": "items() retorna uma visão com pares chave/valor.",
+    "options": [
+      {
+        "id": 157,
+        "text": ".items()",
+        "isCorrect": true
+      },
+      {
+        "id": 158,
+        "text": ".pairs()",
+        "isCorrect": false
+      },
+      {
+        "id": 159,
+        "text": ".values_keys()",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "level": 4,
+    "topic": "Arquivos",
+    "difficulty": "Médio",
+    "prompt": "Qual modo abre arquivo para leitura?",
+    "explanation": "O modo 'r' abre o arquivo para leitura.",
+    "options": [
+      {
+        "id": 160,
+        "text": "'r'",
+        "isCorrect": true
+      },
+      {
+        "id": 161,
+        "text": "'w'",
+        "isCorrect": false
+      },
+      {
+        "id": 162,
+        "text": "'a'",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "level": 4,
+    "topic": "List comprehension",
+    "difficulty": "Médio",
+    "prompt": "Qual expressão cria [0, 1, 2]?",
+    "explanation": "A list comprehension percorre range(3) e guarda cada x.",
+    "options": [
+      {
+        "id": 163,
+        "text": "[x for x in range(3)]",
+        "isCorrect": true
+      },
+      {
+        "id": 164,
+        "text": "[x for range(3)]",
+        "isCorrect": false
+      },
+      {
+        "id": 165,
+        "text": "list(1,2,3)",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "level": 4,
+    "topic": "Módulos",
+    "difficulty": "Médio",
+    "prompt": "Como importar o módulo math?",
+    "explanation": "import carrega módulos em Python.",
+    "options": [
+      {
+        "id": 166,
+        "text": "import math",
+        "isCorrect": true
+      },
+      {
+        "id": 167,
+        "text": "using math",
+        "isCorrect": false
+      },
+      {
+        "id": 168,
+        "text": "include math",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "level": 4,
+    "topic": "Sets",
+    "difficulty": "Médio",
+    "prompt": "Qual estrutura não permite itens duplicados?",
+    "explanation": "set representa conjunto e elimina duplicatas.",
+    "options": [
+      {
+        "id": 169,
+        "text": "set",
+        "isCorrect": true
+      },
+      {
+        "id": 170,
+        "text": "list",
+        "isCorrect": false
+      },
+      {
+        "id": 171,
+        "text": "tuple",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "level": 4,
+    "topic": "Funções",
+    "difficulty": "Médio",
+    "prompt": "O que *args permite em uma função?",
+    "explanation": "*args empacota argumentos posicionais extras em uma tupla.",
+    "options": [
+      {
+        "id": 172,
+        "text": "Receber vários argumentos posicionais",
+        "isCorrect": true
+      },
+      {
+        "id": 173,
+        "text": "Forçar inteiro",
+        "isCorrect": false
+      },
+      {
+        "id": 174,
+        "text": "Criar variável global",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "level": 4,
+    "topic": "Dicionários",
+    "difficulty": "Médio",
+    "prompt": "Qual método busca uma chave sem gerar erro se ela não existir?",
+    "explanation": "get() retorna None ou um valor padrão quando a chave não existe.",
+    "options": [
+      {
+        "id": 175,
+        "text": ".get()",
+        "isCorrect": true
+      },
+      {
+        "id": 176,
+        "text": ".find()",
+        "isCorrect": false
+      },
+      {
+        "id": 177,
+        "text": ".safe()",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "level": 4,
+    "topic": "Erros",
+    "difficulty": "Médio",
+    "prompt": "Qual exceção aparece ao acessar índice inexistente em uma lista?",
+    "explanation": "IndexError indica índice fora do intervalo.",
+    "options": [
+      {
+        "id": 178,
+        "text": "IndexError",
+        "isCorrect": true
+      },
+      {
+        "id": 179,
+        "text": "KeyError",
+        "isCorrect": false
+      },
+      {
+        "id": 180,
+        "text": "NameError",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "level": 5,
+    "topic": "List comprehension",
+    "difficulty": "Difícil",
+    "prompt": "Qual é o resultado de [x * 2 for x in range(3)]?",
+    "explanation": "range(3) gera 0, 1 e 2; cada valor é multiplicado por 2.",
+    "options": [
+      {
+        "id": 181,
+        "text": "[0, 2, 4]",
+        "isCorrect": true
+      },
+      {
+        "id": 182,
+        "text": "[2, 4, 6]",
+        "isCorrect": false
+      },
+      {
+        "id": 183,
+        "text": "[0, 1, 2]",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "level": 5,
+    "topic": "None",
+    "difficulty": "Difícil",
+    "prompt": "Qual é type(None).__name__?",
+    "explanation": "None é o único valor do tipo NoneType.",
+    "options": [
+      {
+        "id": 184,
+        "text": "NoneType",
+        "isCorrect": true
+      },
+      {
+        "id": 185,
+        "text": "null",
+        "isCorrect": false
+      },
+      {
+        "id": 186,
+        "text": "void",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "level": 5,
+    "topic": "Fatiamento",
+    "difficulty": "Difícil",
+    "prompt": "Se L = [10, 20, 30], qual é L[:2]?",
+    "explanation": "L[:2] pega do início até antes do índice 2.",
+    "options": [
+      {
+        "id": 187,
+        "text": "[10, 20]",
+        "isCorrect": true
+      },
+      {
+        "id": 188,
+        "text": "[20, 30]",
+        "isCorrect": false
+      },
+      {
+        "id": 189,
+        "text": "[10, 20, 30]",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "level": 5,
+    "topic": "Erros",
+    "difficulty": "Difícil",
+    "prompt": "Qual erro ocorre em 10 / 0?",
+    "explanation": "Divisão por zero gera ZeroDivisionError.",
+    "options": [
+      {
+        "id": 190,
+        "text": "ZeroDivisionError",
+        "isCorrect": true
+      },
+      {
+        "id": 191,
+        "text": "DivError",
+        "isCorrect": false
+      },
+      {
+        "id": 192,
+        "text": "MathError",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "level": 5,
+    "topic": "Listas",
+    "difficulty": "Difícil",
+    "prompt": "Qual método remove todos os itens de uma lista L?",
+    "explanation": "clear() limpa a lista sem criar outra.",
+    "options": [
+      {
+        "id": 193,
+        "text": "L.clear()",
+        "isCorrect": true
+      },
+      {
+        "id": 194,
+        "text": "L.delete()",
+        "isCorrect": false
+      },
+      {
+        "id": 195,
+        "text": "L.empty()",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "level": 5,
+    "topic": "Geradores",
+    "difficulty": "Difícil",
+    "prompt": "Qual palavra produz valores aos poucos em uma função geradora?",
+    "explanation": "yield pausa a função e entrega um valor por vez.",
+    "options": [
+      {
+        "id": 196,
+        "text": "yield",
+        "isCorrect": true
+      },
+      {
+        "id": 197,
+        "text": "return all",
+        "isCorrect": false
+      },
+      {
+        "id": 198,
+        "text": "emit",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "level": 5,
+    "topic": "Lambda",
+    "difficulty": "Difícil",
+    "prompt": "Qual expressão cria uma função que soma 1?",
+    "explanation": "lambda cria funções pequenas em uma expressão.",
+    "options": [
+      {
+        "id": 199,
+        "text": "lambda x: x + 1",
+        "isCorrect": true
+      },
+      {
+        "id": 200,
+        "text": "lambda x => x + 1",
+        "isCorrect": false
+      },
+      {
+        "id": 201,
+        "text": "fn x: x + 1",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "level": 5,
+    "topic": "Classes",
+    "difficulty": "Difícil",
+    "prompt": "Qual método inicializa atributos de uma classe?",
+    "explanation": "__init__ é chamado ao criar uma instância.",
+    "options": [
+      {
+        "id": 202,
+        "text": "__init__",
+        "isCorrect": true
+      },
+      {
+        "id": 203,
+        "text": "__start__",
+        "isCorrect": false
+      },
+      {
+        "id": 204,
+        "text": "constructor",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "level": 5,
+    "topic": "Classes",
+    "difficulty": "Difícil",
+    "prompt": "O que self representa dentro de um método de instância?",
+    "explanation": "self aponta para o objeto atual.",
+    "options": [
+      {
+        "id": 205,
+        "text": "A própria instância",
+        "isCorrect": true
+      },
+      {
+        "id": 206,
+        "text": "A classe pai",
+        "isCorrect": false
+      },
+      {
+        "id": 207,
+        "text": "Uma variável global",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "level": 5,
+    "topic": "Context manager",
+    "difficulty": "Difícil",
+    "prompt": "Por que usar with open('a.txt') as f?",
+    "explanation": "with garante o fechamento adequado do arquivo.",
+    "options": [
+      {
+        "id": 208,
+        "text": "Para fechar o arquivo automaticamente",
+        "isCorrect": true
+      },
+      {
+        "id": 209,
+        "text": "Para acelerar o processador",
+        "isCorrect": false
+      },
+      {
+        "id": 210,
+        "text": "Para transformar texto em lista",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "level": 5,
+    "topic": "Dicionários",
+    "difficulty": "Difícil",
+    "prompt": "Qual é o resultado de {'a': 1}.get('b', 0)?",
+    "explanation": "get retorna o valor padrão quando a chave não existe.",
+    "options": [
+      {
+        "id": 211,
+        "text": "0",
+        "isCorrect": true
+      },
+      {
+        "id": 212,
+        "text": "None",
+        "isCorrect": false
+      },
+      {
+        "id": 213,
+        "text": "KeyError",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "level": 5,
+    "topic": "Compreensões",
+    "difficulty": "Difícil",
+    "prompt": "Qual expressão cria um dicionário com quadrados de 0 a 2?",
+    "explanation": "Compreensão de dicionário usa chaves e pares chave: valor.",
+    "options": [
+      {
+        "id": 214,
+        "text": "{x: x*x for x in range(3)}",
+        "isCorrect": true
+      },
+      {
+        "id": 215,
+        "text": "[x: x*x for x in range(3)]",
+        "isCorrect": false
+      },
+      {
+        "id": 216,
+        "text": "dict(x*x for x in range(3))",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "level": 5,
+    "topic": "Exceções",
+    "difficulty": "Difícil",
+    "prompt": "Qual bloco sempre executa em um try/except?",
+    "explanation": "finally executa havendo erro ou não.",
+    "options": [
+      {
+        "id": 217,
+        "text": "finally",
+        "isCorrect": true
+      },
+      {
+        "id": 218,
+        "text": "always",
+        "isCorrect": false
+      },
+      {
+        "id": 219,
+        "text": "end",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "level": 5,
+    "topic": "Iteradores",
+    "difficulty": "Difícil",
+    "prompt": "Qual função obtém o próximo item de um iterador?",
+    "explanation": "next(iterador) pede o próximo valor disponível.",
+    "options": [
+      {
+        "id": 220,
+        "text": "next()",
+        "isCorrect": true
+      },
+      {
+        "id": 221,
+        "text": "move()",
+        "isCorrect": false
+      },
+      {
+        "id": 222,
+        "text": "take()",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "level": 5,
+    "topic": "Ordenação",
+    "difficulty": "Difícil",
+    "prompt": "Qual argumento permite ordenar uma lista de dicionários por uma chave?",
+    "explanation": "sorted(..., key=...) define a regra usada na ordenação.",
+    "options": [
+      {
+        "id": 223,
+        "text": "key",
+        "isCorrect": true
+      },
+      {
+        "id": 224,
+        "text": "index",
+        "isCorrect": false
+      },
+      {
+        "id": 225,
+        "text": "where",
+        "isCorrect": false
+      }
+    ]
+  }
+]
