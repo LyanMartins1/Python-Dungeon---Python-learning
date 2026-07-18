@@ -324,14 +324,19 @@ function movePlayer(dx, dy) {
 }
 
 function togglePause() {
-    if (state.currentQuestion) return;
-
     const pauseDialog = document.getElementById("pause-dialog");
+
     if (pauseDialog.open) {
         pauseDialog.close();
         state.canMove = true;
         return;
     }
+
+    // Don't open pause if any other dialog is active
+    if (state.currentQuestion) return;
+    if (document.getElementById("intro-dialog").open) return;
+    if (document.getElementById("message-dialog").open) return;
+    if (document.getElementById("quiz-dialog").open) return;
 
     state.canMove = false;
     pauseDialog.showModal();
@@ -396,8 +401,6 @@ function setupPauseMenu() {
 
     pauseDialog.addEventListener("cancel", (e) => {
         e.preventDefault();
-        pauseDialog.close();
-        state.canMove = true;
     });
 }
 

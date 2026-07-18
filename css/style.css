@@ -407,8 +407,8 @@ kbd {
     margin-bottom: 12px;
 }
 
-/* Pause dialog */
-.modal--pause {
+/* Pause dialog — [open] required so closed <dialog> stays hidden */
+.modal--pause[open] {
     display: flex;
     flex-direction: column;
     gap: 8px;
