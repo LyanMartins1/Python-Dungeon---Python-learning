@@ -5,6 +5,7 @@ import { createInitialState } from "./state.js";
 import {
     closeQuestion,
     disableOptions,
+    hideTimer,
     renderHud,
     renderMaze,
     renderTimer,
@@ -12,6 +13,7 @@ import {
     showFeedback,
     showMessage,
     showQuestion,
+    showTimer,
     updatePlayerPosition
 } from "./ui.js";
 
@@ -51,6 +53,7 @@ function clearQuestionTimer() {
 function startQuestionTimer() {
     clearQuestionTimer();
     state.timeLeft = state.questionTimeLimit;
+    showTimer();
     renderTimer(state);
 
     state.timerId = setInterval(() => {
@@ -66,6 +69,7 @@ function startQuestionTimer() {
 
 function loseLife(title, text) {
     clearQuestionTimer();
+    hideTimer();
     state.lives--;
     renderHud(state);
     state.currentQuestion = null;
@@ -136,6 +140,7 @@ function handleAnswer(option) {
     state.answerLocked = true;
     disableOptions();
     clearQuestionTimer();
+    hideTimer();
 
     if (option.isCorrect) {
         state.answeredQuestionIds.add(state.currentQuestion.id);
@@ -143,24 +148,20 @@ function handleAnswer(option) {
         state.map[state.currentGate.y][state.currentGate.x] = TILE.FLOOR;
         renderHud(state);
         renderMaze(state);
-        showFeedback(state.currentQuestion.explanation, true);
-
-        setTimeout(() => {
+        showFeedback(state.currentQuestion.explanation, true, () => {
             closeQuestion();
             state.canMove = true;
             state.currentQuestion = null;
             state.currentGate = null;
             state.answerLocked = false;
-        }, 700);
+        });
         return;
     }
 
     const correct = state.currentQuestion.options.find((item) => item.isCorrect);
-    showFeedback(`Resposta correta: ${correct.text}. ${state.currentQuestion.explanation}`, false);
-
-    setTimeout(() => {
+    showFeedback(`Resposta correta: ${correct.text}. ${state.currentQuestion.explanation}`, false, () => {
         loseLife("Resposta incorreta.", "Voce perdeu 1 vida, mas ganhou uma dica para tentar de novo.");
-    }, 1200);
+    });
 }
 
 function collectTimeItem(y, x) {
@@ -301,6 +302,19 @@ function movePlayer(dx, dy) {
         return;
     }
     if (tile === TILE.FINISH) {
+        const remainingGates = state.map.flat().filter((t) => t === TILE.GATE).length;
+        if (remainingGates > 0) {
+            state.canMove = false;
+            showMessage({
+                title: "Saida bloqueada",
+                text: `Ainda restam ${remainingGates} questao(oes) no labirinto. Resolva todas para avancar.`,
+                actionText: "Voltar ao mapa",
+                onAction: () => {
+                    state.canMove = true;
+                }
+            });
+            return;
+        }
         nextLevel();
         return;
     }
@@ -309,7 +323,27 @@ function movePlayer(dx, dy) {
     updatePlayerPosition(state);
 }
 
+function togglePause() {
+    if (state.currentQuestion) return;
+
+    const pauseDialog = document.getElementById("pause-dialog");
+    if (pauseDialog.open) {
+        pauseDialog.close();
+        state.canMove = true;
+        return;
+    }
+
+    state.canMove = false;
+    pauseDialog.showModal();
+}
+
 function handleKeydown(event) {
+    if (event.key === "Escape") {
+        event.preventDefault();
+        togglePause();
+        return;
+    }
+
     const keys = {
         ArrowUp: [0, -1],
         ArrowRight: [1, 0],
@@ -329,7 +363,48 @@ function handleKeydown(event) {
     movePlayer(keys[event.key][0], keys[event.key][1]);
 }
 
+function showIntroScreen() {
+    const introDialog = document.getElementById("intro-dialog");
+    const startButton = document.getElementById("intro-start");
+
+    state.canMove = false;
+    introDialog.showModal();
+
+    startButton.addEventListener("click", () => {
+        introDialog.close();
+        state.canMove = true;
+    }, { once: true });
+}
+
+function setupPauseMenu() {
+    const pauseDialog = document.getElementById("pause-dialog");
+
+    document.getElementById("pause-resume").addEventListener("click", () => {
+        pauseDialog.close();
+        state.canMove = true;
+    });
+
+    document.getElementById("pause-restart-level").addEventListener("click", () => {
+        pauseDialog.close();
+        resetLevel();
+    });
+
+    document.getElementById("pause-restart-game").addEventListener("click", () => {
+        pauseDialog.close();
+        window.location.reload();
+    });
+
+    pauseDialog.addEventListener("cancel", (e) => {
+        e.preventDefault();
+        pauseDialog.close();
+        state.canMove = true;
+    });
+}
+
 export function startGame() {
     resetLevel();
+    hideTimer();
     window.addEventListener("keydown", handleKeydown);
+    setupPauseMenu();
+    showIntroScreen();
 }

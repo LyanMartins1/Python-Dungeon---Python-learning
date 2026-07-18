@@ -1,5 +1,10 @@
 import { GAME, TILE } from "./constants.js";
 
+// Prevent ESC from closing quiz and message dialogs natively
+document.getElementById("quiz-dialog").addEventListener("cancel", (e) => e.preventDefault());
+document.getElementById("message-dialog").addEventListener("cancel", (e) => e.preventDefault());
+document.getElementById("intro-dialog").addEventListener("cancel", (e) => e.preventDefault());
+
 const elements = {
     maze: document.getElementById("maze"),
     level: document.getElementById("level-text"),
@@ -129,9 +134,29 @@ export function setQuestionLoading() {
     }
 }
 
-export function showFeedback(message, isRight) {
-    elements.feedback.textContent = message;
+export function showFeedback(message, isRight, onContinue) {
+    elements.feedback.textContent = "";
     elements.feedback.className = `feedback ${isRight ? "is-right" : "is-wrong"}`;
+
+    const textSpan = document.createElement("span");
+    textSpan.textContent = message;
+    elements.feedback.appendChild(textSpan);
+
+    if (onContinue) {
+        const btn = document.createElement("button");
+        btn.className = "button feedback-continue";
+        btn.textContent = "Continuar";
+        btn.addEventListener("click", onContinue, { once: true });
+        elements.feedback.appendChild(btn);
+    }
+}
+
+export function showTimer() {
+    document.querySelector(".hud__timer").classList.remove("is-hidden");
+}
+
+export function hideTimer() {
+    document.querySelector(".hud__timer").classList.add("is-hidden");
 }
 
 export function closeQuestion() {

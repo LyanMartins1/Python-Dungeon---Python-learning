@@ -55,14 +55,36 @@
                 <p id="message-text"></p>
                 <button id="message-action" class="button">Continuar</button>
             </dialog>
+
+            <dialog id="intro-dialog" class="modal modal--message modal--intro">
+                <h1>Python Dungeon</h1>
+                <p class="intro-subtitle">Aprenda Python explorando labirintos</p>
+                <div class="intro-legend">
+                    <div class="intro-row"><span class="legend-icon legend-icon--player">@</span> Voce (use as <kbd>Setas</kbd> para mover)</div>
+                    <div class="intro-row"><span class="legend-icon legend-icon--gate">{}</span> Questao de Python (responda para abrir)</div>
+                    <div class="intro-row"><span class="legend-icon legend-icon--time">+</span> Bonus de tempo extra</div>
+                    <div class="intro-row"><span class="legend-icon legend-icon--secret">?</span> Passagem secreta (dungeon bonus)</div>
+                    <div class="intro-row"><span class="legend-icon legend-icon--finish">&gt;&gt;</span> Saida (resolva todas as questoes primeiro)</div>
+                </div>
+                <p class="intro-tip">Pressione <kbd>ESC</kbd> a qualquer momento para pausar</p>
+                <button id="intro-start" class="button">Iniciar Jornada</button>
+            </dialog>
+
+            <dialog id="pause-dialog" class="modal modal--message modal--pause">
+                <h1>Pausado</h1>
+                <p>Pressione ESC ou escolha uma opcao:</p>
+                <button id="pause-resume" class="button">Continuar</button>
+                <button id="pause-restart-level" class="button button--secondary">Reiniciar Fase</button>
+                <button id="pause-restart-game" class="button button--danger">Reiniciar Jogo</button>
+            </dialog>
         </section>
 
         <footer class="legend" aria-label="Legenda">
             <span><kbd>Setas</kbd> mover</span>
-            <span><span class="legend-tile legend-tile--gate"></span> questao</span>
-            <span><span class="legend-tile legend-tile--time"></span> tempo extra</span>
-            <span><span class="legend-tile legend-tile--secret"></span> segredo</span>
-            <span><span class="legend-tile legend-tile--finish"></span> saida</span>
+            <span><span class="legend-tile legend-tile--gate">{}</span> questao</span>
+            <span><span class="legend-tile legend-tile--time">+</span> tempo extra</span>
+            <span><span class="legend-tile legend-tile--secret">?</span> segredo</span>
+            <span><span class="legend-tile legend-tile--finish">&gt;&gt;</span> saida</span>
         </footer>
     </main>
 
