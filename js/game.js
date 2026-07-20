@@ -125,7 +125,7 @@ async function openGate(y, x) {
         closeQuestion();
         showMessage({
             title: "Banco indisponivel",
-            text: "Nao consegui buscar uma pergunta no SQLite. Verifique se o servidor Python esta rodando.",
+            text: "Nao consegui carregar o banco de perguntas. Verifique se o arquivo data/questions.json esta disponivel.",
             actionText: "Voltar ao mapa",
             onAction: () => {
                 state.canMove = true;
